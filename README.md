@@ -7,4 +7,6 @@ docker run -dit  \
 --restart always \
 -e TZ=Asia/Shanghai \
 -p 17840:80 \
-jdsign:latest
+fifaty/jdsign:amd64 
+
+arm设备把amd64改成arm64即可
