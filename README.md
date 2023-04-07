@@ -1,5 +1,7 @@
 此sign收集于网络，是python版，我对其进行docker化：
 
+注意，此sign目前发现只能跑M系列库
+
 拉取命令如下
 
 docker run -dit  \
@@ -7,8 +9,8 @@ docker run -dit  \
 --restart always \
 -e TZ=Asia/Shanghai \
 -p 17840:80 \
-fifaty/jdsign:amd64
+fifaty/jdsign:main
 
-arm设备把amd64改成arm64
+自动识别服务器架构
 
 
