@@ -5,7 +5,7 @@ on:
       - main
 env:
   DOCKER_CLI_EXPERIMENTAL: enabled    # 启用实验性功能
-  IMAGE_NAME: fifaty/jdsign
+  IMAGE_NAME: fifaty/jdsign:latest
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
@@ -23,5 +23,5 @@ jobs:
         push: true
         platform: linux/amd64,linux/arm64/v8  # 构建不同架构的 Docker 镜像
         tags: |
-          ${{ env.IMAGE_NAME }}:latest
-          ${{ env.IMAGE_NAME }}:{{.Tag}}-{{.OS}}-{{.Arch}}  # 显示 tag 名称，以帮助识别镜像所属平台架构
+          $IMAGE_NAME:latest
+          $IMAGE_NAME:{{.Tag}}-{{.OS}}-{{.Arch}}  # 显示 tag 名称，以帮助识别镜像所属平台架构
