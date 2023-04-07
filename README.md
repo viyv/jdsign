@@ -4,7 +4,7 @@
 
 拉取命令如下
 
-docker run -dit  \
+docker run -dit \
 --name pysign \
 --restart always \
 -e TZ=Asia/Shanghai \
