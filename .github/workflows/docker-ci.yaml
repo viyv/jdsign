@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: fifaty/jdsign:latest
+  IMAGE_NAME: fifaty/jdsign
 
 jobs:
   build-and-push-amd64:
