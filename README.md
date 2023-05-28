@@ -13,6 +13,7 @@ docker run -dit \
   -e TZ=Asia/Shanghai \
   -p 17840:80 \
   fifaty/jdsign:main
+  
 自动识别服务器架构
 
 **2023/05/27**
