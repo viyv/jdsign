@@ -7,11 +7,11 @@
 
 拉取命令如下
 
-docker run -dit \\\n
---name pysign \\\n
---restart always \\\n
--e TZ=Asia/Shanghai \\\n
--p 17840:80 \\\n
+docker run -dit \\ \n
+--name pysign \\ \n
+--restart always \\ \n
+-e TZ=Asia/Shanghai \\ \n
+-p 17840:80 \\ \n
 fifaty/jdsign:main
   
 自动识别服务器架构
