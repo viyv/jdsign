@@ -8,10 +8,15 @@
 拉取命令如下
 
 docker run -dit \\
+
   --name pysign \\
+
   --restart always \\
+
   -e TZ=Asia/Shanghai \\
+
   -p 17840:80 \\
+
   fifaty/jdsign:main
   
 自动识别服务器架构
