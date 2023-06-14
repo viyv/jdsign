@@ -1,6 +1,7 @@
 此sign收集于网络，是python版，我对其进行docker化：
 
 ~~注意，此sign目前发现只能跑M系列库~~
+目前已经可以跑M和KR的库
 
 **2023/06/14**
 M系列调用请添加变量 export M_API_SCAN_SIGN_URL="http://服务器IP:17840/sign"
