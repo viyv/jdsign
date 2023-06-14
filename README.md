@@ -2,6 +2,27 @@
 
 ~~注意，此sign目前发现只能跑M系列库~~
 
+**2023/06/14**
+M系列调用请添加变量 export M_API_SCAN_SIGN_URL="http://服务器IP:17840/sign"
+点开链接访问出现此错误
+sign error
+是正常的，直接调用就好了
+
+KR系列调用请添加变量 export JD_SIGN_KRAPI="http://服务器IP:17840/signkr"
+点开链接访问出现此错误
+Method Not Allowed
+The method is not allowed for the requested URL.
+是正常的，直接调用就好了
+
+**2023/05/27**
+部署完成以后打开 http://服务器ip:17840 出现以下英文页面，
+
+Not Found
+
+The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+说明已经部署成功了，正常调用就行了。
+
 **2023/04/23**
 更新以支持KR和M系列
 
@@ -16,11 +37,3 @@ fifaty/jdsign:main
   
 自动识别服务器架构
 
-**2023/05/27**
-部署完成以后打开 http://服务器ip:17840 出现以下英文页面，
-
-Not Found
-
-The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-
-说明已经部署成功了，正常调用就行了。
