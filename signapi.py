@@ -230,7 +230,7 @@ def taskkr(functionId, body_json):
     body_str = quote(body_str)
     ep = quote(ep)
     data_str = f"body={body_str}&client={client}&clientVersion={client_version}&uuid={uuid}&st={st}&sv={sv}&sign={sign}"
-    return {"data": {"st": st,"sv": sv,"sign": sign,"body": body_str,"clientVersion": data_str,"uuid": uuid,"functionId": functionId,"convertUrl": data_str,"client": client}}
+    return {"data": {"st": st,"sv": sv,"sign": sign,"body": body_str,"clientVersion": client_version,"uuid": uuid,"functionId": functionId,"convertUrl": data_str,"client": client}}
 
 @server.route('/sign', methods=['GET', 'POST'])
 def sign():
